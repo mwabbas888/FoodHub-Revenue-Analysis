@@ -1,6 +1,6 @@
 # FoodHub: Revenue & Operations Analysis
 
-This repository contains the full analysis and data for the FoodHub project, completed as part of the MIT Data Science and Machine learning program.
+This repository contains the full analysis and data for the FoodHub project, completed as part of the MIT Data Science and Machine Learning program.
 
 ---
 
@@ -24,15 +24,15 @@ Here are some of the key insights derived from the analysis:
 
 **1. American Cuisine Dominates Order Volume**
 *Insight:* American cuisine consistently shows the highest order count, significantly outperforming all other cuisine types. Japanese and Italian cuisines also demonstrate substantial popularity.
-<img src="./visualizations/Cuisine_type_vs_count.png" alt="Cuisine Type vs Order Count"/>
+<img src="./visualizations/Cuisine Type vs Order Count.png" alt="Cuisine Type vs Order Count"/>
 
 **2. Weekend Spikes in Popular Cuisines**
 *Insight:* The top-performing cuisines (American, Japanese, Italian, Chinese) experience a notable increase in order volume during weekends compared to weekdays. American cuisine, in particular, shows a substantial jump.
-<img src="./visualizations/Cuisine_type_vs_count_vs_Day_of_the_week.png" alt="Cuisine Type vs Order Count vs Day of the Week"/>
+<img src="./visualizations/Cuisine Type vs Order Count vs Day of the Week.png" alt="Cuisine Type vs Order Count vs Day of the Week"/>
 
 **3. Varying Rating Performance Across Cuisines and Days**
 *Insight:* While ratings generally remain high, some cuisines show distinct patterns. For instance, Spanish cuisine receives very high ratings on weekends but lower on weekdays. Conversely, Vietnamese cuisine's ratings drop significantly on weekends. American and Japanese cuisines maintain relatively consistent high ratings across both weekdays and weekends.
-<img src="./visualizations/Cuisine_type_vs_rating_vs_day_of_the_week.png" alt="Line Plot: Ratings for Cuisine Types"/>
+<img src="./visualizations/Line Plot: Ratings for Cuisine Types.png" alt="Line Plot: Ratings for Cuisine Types"/>
 
 ---
 
