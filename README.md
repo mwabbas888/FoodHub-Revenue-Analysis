@@ -1,6 +1,6 @@
 # FoodHub: Revenue & Operations Analysis
 
-This repository contains the full analysis and data for the FoodHub project, completed as part of the MIT Data Science and Machine Learning program.
+This repository contains the full analysis and data for the FoodHub project, completed as part of the MIT Data Science and Machine learning program.
 
 ---
 
@@ -12,10 +12,9 @@ The goal of this project was to analyze customer order data for FoodHub, a food 
 
 ## Key Questions Addressed
 
-1.  **Revenue Drivers:** Which cuisine types and restaurants generate the most revenue?
-2.  **Operational Efficiency:** What is the relationship between order cost, preparation time, and delivery time?
-3.  **Customer Satisfaction:** What factors correlate with higher customer ratings?
-4.  **Spending Patterns:** How do customer spending habits differ between weekdays and weekends?
+1.  **Popularity & Volume:** Which cuisine types have the highest order counts overall and how do they compare between weekdays and weekends?
+2.  **Customer Satisfaction by Cuisine:** How do customer ratings for different cuisine types vary between weekdays and weekends?
+3.  **Strategic Opportunities:** Where are the key areas to focus marketing and operational efforts based on order volume and customer satisfaction?
 
 ---
 
@@ -23,27 +22,30 @@ The goal of this project was to analyze customer order data for FoodHub, a food 
 
 Here are some of the key insights derived from the analysis:
 
-**1. American Cuisine is the Primary Revenue Driver**
-*Insight:* While several cuisines are popular, American food generates significantly more revenue for the platform, making it a prime target for promotional activities.
-<img src="./visualizations/revenue_by_cuisine.png" alt="Revenue by Cuisine"/>
+**1. American Cuisine Dominates Order Volume**
+*Insight:* American cuisine consistently shows the highest order count, significantly outperforming all other cuisine types. Japanese and Italian cuisines also demonstrate substantial popularity.
+<img src="./visualizations/Cuisine_type_vs_count.png" alt="Cuisine Type vs Order Count"/>
 
-**2. Customer Satisfaction is Not Driven by Speed or Cost Alone**
-*Insight:* The correlation heatmap showed no strong link between ratings and variables like delivery time or cost. This suggests that food quality and order accuracy are likely more important drivers of satisfaction.
-*(You would include your correlation matrix image here, e.g., `<img src="./visualizations/correlation_heatmap.png" alt="Correlation Heatmap"/>`)*
+**2. Weekend Spikes in Popular Cuisines**
+*Insight:* The top-performing cuisines (American, Japanese, Italian, Chinese) experience a notable increase in order volume during weekends compared to weekdays. American cuisine, in particular, shows a substantial jump.
+<img src="./visualizations/Cuisine_type_vs_count_vs_Day_of_the_week.png" alt="Cuisine Type vs Order Count vs Day of the Week"/>
 
-**3. Clear Weekend Spending Uplift**
-*Insight:* Customers, on average, spend more per order on weekends, especially on American and Japanese cuisine. This presents a clear opportunity for targeted weekend promotions.
-<img src="./visualizations/weekday_weekend_spending.png" alt="Weekday vs Weekend Spending"/>
+**3. Varying Rating Performance Across Cuisines and Days**
+*Insight:* While ratings generally remain high, some cuisines show distinct patterns. For instance, Spanish cuisine receives very high ratings on weekends but lower on weekdays. Conversely, Vietnamese cuisine's ratings drop significantly on weekends. American and Japanese cuisines maintain relatively consistent high ratings across both weekdays and weekends.
+<img src="./visualizations/Cuisine_type_vs_rating_vs_day_of_the_week.png" alt="Line Plot: Ratings for Cuisine Types"/>
 
 ---
 
 ## Actionable Recommendations
 
-Based on the analysis, I recommended the following strategic actions:
+Based on the analysis, I recommend the following strategic actions:
 
-* **Launch Targeted Promotions:** Offer "weekend special" vouchers for American and Japanese restaurants to capitalize on existing spending habits and further increase average order value.
-* **Prioritize High-Value Restaurant Partnerships:** Focus marketing efforts and premium placement on restaurants that have both high ratings and high order volume (e.g., The Meatball Shop, Shake Shack) to maximize platform revenue.
-* **Shift Focus for Improving Ratings:** Instead of focusing solely on reducing delivery times, implement a system to track order accuracy and food quality feedback to better address the real drivers of customer satisfaction.
+* **Capitalize on American Cuisine's Popularity:** Given its leading order volume, continue to prioritize American cuisine in marketing and partnerships. Consider "American Weekend Feast" promotions to leverage its weekend surge.
+* **Boost Weekend Revenue with Targeted Promotions:** Design weekend-specific campaigns for American, Japanese, and Italian cuisines, as these show strong uptake during these periods. This could include weekend-only discounts or bundle deals.
+* **Optimize for Spanish & Vietnamese Cuisine:**
+    * **Spanish:** Investigate the factors contributing to its high weekend ratings. Can these insights be applied to weekday service for Spanish cuisine, or is it a specific weekend indulgence for customers? Promote Spanish cuisine heavily on weekends.
+    * **Vietnamese:** Urgently investigate the significant drop in weekend ratings for Vietnamese cuisine. This could indicate operational issues (e.g., quality, delivery, accuracy) during peak weekend hours that need immediate attention to prevent customer churn.
+* **Maintain Focus on Consistently High-Rated Cuisines:** Ensure consistent quality and operational excellence for American and Japanese cuisines, as their stable high ratings across the week indicate strong customer satisfaction.
 
 ---
 
